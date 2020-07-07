@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <script src="main.js"></script>
+  </head>
+  <body class="body">
+    <nav class="nav">
+        <h2 id="title">Color Flipper</h2>
+        <h3><a href="/Projects/15%20JS%20projects/1%20Color%20flipper/gradient.html">Gradient</a></h3>
+        <h3><a href="/Projects/15%20JS%20projects/1%20Color%20flipper/main.html">Hex</a></h3>
+    </nav>
+    <main>
+        <div class="gradient-container">
+            <div>
+                <h1 class="main-text">First color: <span class="hex-name-left">#f1f5f8</span></h1>
+                <a class="btn" id="btn-left" href="#" onclick="changeColor('left')">CLICK ME</a>
+            </div>
+            <div>
+                <h1 class="main-text">Second color: <span class="hex-name-right">#a2a6f9</span></h1>
+                <a class="btn" id="btn-right" href="#" onclick="changeColor('right')">CLICK ME</a>
+            </div>
+            <div class="code-container">          
+                <p class="code">
+                background-image: linear-gradient(to right, 
+                <span class="hex-name-left">#f1f5f8</span>
+                , 
+                <span class="hex-name-right">#a2a6f9</span>
+                );
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
