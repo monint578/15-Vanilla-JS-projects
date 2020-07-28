@@ -1,0 +1,14 @@
+:root {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  --primary: #102a42;
+  --secondary: #f1f5f8;
+  --transition-speed: 600ms;
+  --transition: all 0.3s linear;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+body::-webkit-scrollbar {
+  display: none;
+}

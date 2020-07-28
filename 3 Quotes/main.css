@@ -1,0 +1,113 @@
+:root {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  --primary: #102a42;
+  --secondary: #f1f5f8;
+  --transition-speed: 600ms;
+  --transition: all 0.3s linear;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.title-container {
+  padding-bottom: 3rem;
+}
+.title {
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+hr {
+  height: 0.25rem;
+  width: 5rem;
+  background: teal;
+  margin: 0 auto;
+  border: none;
+}
+.container {
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  width: 40vw;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  text-align: center;
+}
+.container:hover {
+  box-shadow: var(--dark-shadow);
+  transition: var(--transition);
+}
+.content {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.content h3 {
+  font-weight: bolder;
+}
+.content p:first-of-type {
+  color: teal;
+  font-style: normal;
+  padding-top: 0;
+}
+.content p {
+  color: grey;
+  padding-top: 0.5rem;
+}
+.img-container {
+  position: relative;
+  object-fit: cover;
+  max-width: 10rem;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+.img-container::before {
+  content: "";
+  width: 95%;
+  height: 95%;
+  background: teal;
+  position: absolute;
+  top: -0.4rem;
+  right: -0.4rem;
+  border-radius: 50%;
+}
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: teal;
+  color: white;
+}
+.img {
+  object-fit: cover;
+  position: relative;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  box-shadow: var(--dark-shadow);
+}
+.btn,
+.fas {
+  color: teal;
+  padding-right: 0.5rem;
+  font-size: 2rem;
+}

@@ -6,7 +6,7 @@ decrease.onclick =  function () {
   number -= 1;
   numberPlace.textContent = number;
   colorChange();
-};
+});
 
 var increase = document.getElementById("increase");
 increase.onclick = function () {

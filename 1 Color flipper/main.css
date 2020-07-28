@@ -85,3 +85,28 @@ body {
     grid-area: third;
     align-content: center;
 }
+
+
+/* media */
+
+@media only screen and (max-width: 1440px) {
+    .main-text {
+        width: 50vw;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main-text {
+        width: 90vw;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+        line-height: 2rem;
+    }
+    .main-text h1 {
+        font-size: 1.2rem !important;
+    }
+    .code p {
+        font-size: 0.8rem !important;
+    }
+}
