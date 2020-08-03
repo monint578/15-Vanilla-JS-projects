@@ -34,9 +34,9 @@ function btnChangeColor() {
   }
 }
 
-let hexOne = "#f1f5f8";
-let hexTwo = "#a2a6f9";
-let hexDirection = "to right";
+var hexOne = "#f1f5f8";
+var hexTwo = "#a2a6f9";
+var hexDirection = "to right";
 
 function changeColor(side) {
   if (side === "left") {

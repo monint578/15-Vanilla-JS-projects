@@ -5,27 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Flipper</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
-    <link rel="stylesheet" type="text/css" href="reset.css" />
   </head>
   <body>
     <nav class="nav">
-        <h2 id="title">Color Flipper</h2>
-        <h3><a href="/Projects/15%20JS%20projects/1%20Color%20flipper/gradient.html">Gradient</a></h3>
-        <h3><a href="/Projects/15%20JS%20projects/1%20Color%20flipper/main.html">Hex</a></h3>
+        <h3 id="title">Color Flipper</h3>
+        <h3><a href="gradient.html">Gradient</a></h3>
+        <h3><a href="main.html">Hex</a></h3>
     </nav>
     <main class="container">
-        <div class="content">
-          <div class="main-text">
-            <h1>HEX: <span class="hex-name">#f1f5f8</span></h1>
-            <h1>RGB: <span class="rgb-name">rgb(241, 245, 248)</span></h1>
-          </div>            
-          <a class="btn" id="btn" href="#" onclick="btnChangeColor()">CLICK ME</a>
-          <div class="code">
+          <div class="main-card">
+            <h2>HEX: <span class="hex-name">#f1f5f8</span></h2>
+            <h2>RGB: <span class="rgb-name">rgb(241, 245, 248)</span></h2>
+          </div>
+          <div class="btn-container">
+            <a class="btn" id="btn" href="#" onclick="btnChangeColor()">CLICK ME</a>
+          </div>    
+          <div class="code-card">
             <p>background-color: <span class="hex-name">#f1f5f8</span>;</p>
             <p>background-color: rgb(<span class="rgb-name">241, 245, 248</span>);</p>
           </div>
-            
-        </div>
     </main>
     <script src="main.js"></script>
   </body>
