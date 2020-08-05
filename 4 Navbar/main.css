@@ -1,40 +1,15 @@
-:root {
-  font-size: 18px;
-  font-family: "Quicksand", sans-serif;
-  --text-primary: #0f1b61;
-  --bg-primary: #f1f5f8;
-  --bg-secondary: #ffffff;
-  --accent: teal;
-  --transition: all 0.4s ease-in-out;
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-body::-webkit-scrollbar {
-  display: none;
-}
 body {
   background-color: var(--bg-primary);
-  color: var(--text-primary);
-  margin: 0;
 }
 h1 {
-  margin: 0;
   padding: 0.5rem;
 }
 ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 li {
   padding: 0.5rem;
-}
-a,
-a:visited {
-  text-decoration: none;
-  color: var(--text-primary);
-}
-a:hover {
-  color: var(--accent);
 }
 nav {
   background-color: var(--bg-secondary);
