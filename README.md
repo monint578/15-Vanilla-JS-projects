@@ -14,4 +14,5 @@ index.css containes default styles (:root) except 1 Color Flipper.
     Codepen: https://codepen.io/monint578/details/eYZOdeB
 4. Navbar. Simple navbar with hamburger icon. 
     Codepen: https://codepen.io/monint578/details/ExKxbxG
-
+5. SideBar. Simple sidebar with animated hamburger and close icons.
+    Codepen: https://codepen.io/monint578/details/RwawxvY

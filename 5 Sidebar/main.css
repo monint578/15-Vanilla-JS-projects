@@ -1,0 +1,103 @@
+body {
+  background-color: var(--bg-primary);
+}
+h1 {
+  padding: 0.5rem;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 0rem;
+  font-size: x-large;
+}
+.btn-bars {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: var(--accent);
+  animation: 1.5s ease-in-out hamburger;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+#aside {
+  background-color: var(--bg-secondary);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(0%) !important;
+  transition: var(--transition);
+}
+.active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translateX(-50%) !important;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-self: flex-start;
+}
+.btn-close {
+  color: tomato;
+  transform: rotate(-360deg);
+  transition: ease-in-out 0.5s all;
+  cursor: pointer;
+}
+.btn-close:hover {
+  color: red;
+  transform: rotate(360deg);
+  transition: ease-in-out 0.5s all;
+}
+.nav-links a {
+  display: block;
+  padding: 1rem 2rem;
+  transition: 0.2s ease-in all;
+}
+.nav-links a:hover {
+  background-color: var(--accent);
+  color: var(--text-secondary);
+  transition: 0.2s ease-in all;
+  padding-left: 1.3rem;
+}
+.links-social {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-top: 1px solid var(--accent);
+  width: 80%;
+}
+.links-social a {
+  padding: 0.5rem;
+  color: var(--accent);
+  transition: var(--transition);
+}
+.links-social a:hover {
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+@keyframes hamburger {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #aside {
+    width: 25rem;
+  }
+}

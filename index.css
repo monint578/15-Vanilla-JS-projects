@@ -1,39 +1,50 @@
 :root {
-    font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
-    --text-primary: #102a42;
-    --text-secondary: #FFFFFF;
-    --accent: teal;
-    --bg-primary: #f1f5f8;
-    --bg-secondary: #fff;
-    --transition: all 0.5s ease-in;
-    --radius: 0.3rem;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  --text-primary: #102a42;
+  --text-secondary: #ffffff;
+  --accent: teal;
+  --bg-primary: #f1f5f8;
+  --bg-secondary: #fff;
+  --transition: all 0.5s ease-in;
+  --radius: 0.3rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 body {
-    max-width: 100vw;
-    max-height: 100vh;
-    padding: 0;
-    margin: 0;
-    color: var(--text-primary);
-    background-color: var(--bg-secondary);
+  max-width: 100vw;
+  max-height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
 }
-a, a:visited {
-    text-decoration: none;
-    color: var(--text-primary);
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--text-primary);
 }
 a:hover {
-    color: var(--accent);
-  }
-h1, h2, h3, p {
-    padding: 0;
-    margin: 0;
+  color: var(--accent);
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+button,
+button:focus {
+  border: none;
+  background: none;
+  outline: none;
 }
