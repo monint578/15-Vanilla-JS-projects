@@ -50,6 +50,7 @@ nav {
 button, button:focus {
   border: none;
   background: none;
+  outline:none;
 }
 button span {
   display: block;
