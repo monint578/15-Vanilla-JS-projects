@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1>Modal Project</h1>
+        <button class="btn-open" onclick="showModal()">OPEN MODAL</button>
+      </section>
+      <section class="modal" id="modal">
+        <div class="modal-card">
+          <div class="modal-title">
+            <h3>Modal Content</h3>
+            <button class="btn-close fa-lg" onclick="showModal()">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <p class="modal-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, quasi hic mollitia officia dolor architecto deserunt
+            incidunt quos nesciunt delectus fugiat libero cupiditate aperiam,
+            tempora similique maiores vitae quaerat maxime.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3d60d52d76.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
